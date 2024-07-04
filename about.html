@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aryan Gidwani's Personal Website</title>
+    </head>
+    <link href='./style.css' rel='stylesheet'>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <nav>     
+            <ul class="sidebar">    <!-- Displays sidebar vertically -->                 
+                <li onclick=hideSidebar()><a class='name' href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#other">Other</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Aryan Gidwani</a></li>     <!-- Displays it in the normal, horizontal way -->
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About Me</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#music">Music</a></li>
+                <li class="hideOnMobile"><a href="#other">Other</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </ul> <!-- last li element has sbg link for menu icon: on click, it should show the list of links using javascript-->
+
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex'; // currently display = none in the css code; when it's clicked we want the vertical sidebar to appear, so we need to switch it to flex
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none'; // similar idea: when clicking on the x icon, the vertical sidebar will disappear
+            }
+        </script>
+
+        <section id="home">
+            <div class="home container">
+                <div class="col-right">
+                    <div class="intro">
+                        <h1>Hi! My name is Aryan Gidwani!<br> Click around the website to learn more about me.</h1>
+                    </div>
+    
+                    <div class="col-left">
+                        <img src="img/IMG_9688.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <div class="about">
+                <h1>About Me</h1>
+                <p>Hi! My name is Aryan Gidwani, and I am a second year <b>computer engineering</b> student at the <b>University of Toronto</b>. In my free time, I enjoy
+                playing basketball, playing music, and hanging out with friends:D In addition to just playing basketball, I enjoy watching the sport, as my favourite team 
+                are the Golden State Warriors. <br> My interest for engineering and programming grew due to my passion for mathematics and learning more about it, as well as
+                a basic introductory online programming course I took in grade 8! Ever since then, I've been passionate about programming, as I have built many projects 
+                that were extremely exciting and rewarding once I figured it out. In fact, this website has been programmed using CSS, Javascript, and HTML! Feel free
+                to contact me at any of my <b>socials</b> listed below.</p>
+            </div>
+
+            <div class="contain">
+                <div class="col-left">
+                    <img src="img/IMG_1952.jpg" alt="">
+    
+                </div>
+    
+                <div class="col-right">
+                    <h1>Contact Information</h1>
+                    <div class="social-icons">
+                        <a class="social" href="https://www.instagram.com/aryan_gidwani/" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+    
+                        <a class="social" href="https://github.com/AryanGidwani" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        
+                        <a class="social" href="https://www.linkedin.com/in/aryan-gidwani/" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+    
+                        <a class="social" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrnWrcsFCKsxsBFrLXgKJgxWvcLzSBjXrFLHRNjJZtxGSgWZRpjFTMldbRcPPgztzvHQd" target="_blank">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="animation">
+                        <h1 class="text-one">Download <span></span></h1>
+                        <h1 class="text-two">my resume by<span></span></h1>
+                        <h1 class="text-three">clicking on the button!<span></span></h1>
+                    </div>
+                </div>
+
+                <div class="col-right-right">
+                    <h1>Resume</h1>
+                    <a href="img/Aryan_Gidwani_Resume.pdf" download="My_Resume.pdf" class="button" target="_blank"><b>Download</b></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects">
+                <h1>Projects</h1>
+                <p>This section will outline some of the programming projects I've done over the past couple of years. Throughout these projects, the programming languages I used includes Javscript, HTML, CSS, Python, C, and Java! Click on the images
+                if you want to see the Github repository with the code.</p>
+            </div>
+
+            <div class="box">
+                <div class="col-left">
+                    <h1>Project Description</h1>
+                    <div class="descriptionOne">
+                        <p><b>Reversi: Apr 2024-Apr 2024</b></p>
+                        <p>Using C, I developed and programmed the popular game of Reversi to be played between the user and the computer. Additionally, I programmed and developed
+                            an algorithm for the CPU that determines the best available move based on the moves made by the user. Validity and availability of user inputted moves
+                            were also taken into account.</p>
+
+                    </div>
+
+                    <div class="descriptionTwo">
+                        <p><b>Pacemaker Data Analyzer: Feb 2024-Feb 2024</b></p>
+                        <p>At a hackathon, our team designed an application using Python that would be capable of analyzing data from a pacemaker, which in turn helps detect heart irregularities and
+                            the possibility of low battery levels in the pacemaker. Our team obtained pacemaker data from large datasets in order to analyze trends and get rid of
+                            possible outliers in our program. Additionally, we executed user interface testing to validate the app's usability and functionality of interactive
+                            elements on the application, such as buttons and menus.
+                        </p>
+
+                    </div>
+
+                    <div class="descriptionThree">
+                        <p><b>Employee Management System: Feb 2023-Jun 2023</b></p>
+                        <p>For my employee management system, I used Java to program back-end and Graphical User Interface for the application. I implemented a functional
+                            stack and queue system, using LIFO and FIFO principles, that was able to store the information of employees in a hash table data structure. System 
+                            capabilities include adding, removing, and modifying employee profiles, as well as specifying employee attributes such as salary and experience.
+                        </p>
+                    </div>
+                    
+                    <div class="descriptionFour">
+                        <p><b>President Card Game: Dec 2021-Jun 2022</b></p>
+                        <p>I coded the popular card game President in Python. I designed and implemented game mechanics, such as shuffling cards, dealing cards, determining
+                            user turn order, and ranking players and cards. Additionally, I determined interactions between the cards placed by the players, and the outcomes
+                            of each card interaction in each scenario.
+                        </p>
+                    </div>
+
+                    <div class="descriptionFive">
+                        <p><b>Well.. this website!: Jun 2024-Jul 2024</b></p>
+                        <p>This website has been coded using HTML, CSS, and a little bit of Javascript. I wanted to talk about myself, the work I've done, and some of the things
+                            I've been interested in over the past couple of years. Hence, I thought making a website would be rewarding and also a fun way to express myself. :D
+                        </p>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-right">
+                    <h1>Github Repository</h1>
+                    <a class="imageOne" href="https://github.com/AryanGidwani/reversi" target="_blank">
+                        <img src="img/reversi.jpg" alt="">
+                    </a>
+
+                    <a class="imageTwo" href="https://github.com/AryanGidwani/pythonpacemaker" target="_blank">
+                        <img src="img/pacemaker.jpg" alt="">
+                    </a>
+
+                    <a class="imageThree" href="https://github.com/AryanGidwani/emp-system" target="_blank">
+                        <img src="img/ems.png" alt="">
+                    </a>
+
+                    <a class="imageFour" href="https://github.com/AryanGidwani/card-game" target="_blank">
+                        <img src="img/president.jpg" alt="">
+                    </a>
+
+                    <a class="imageFive" href="https://github.com/AryanGidwani/personalwebsite" target="_blank">
+                        <img src="img/Html-tags-icon.png" alt="">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+        <section id="music">
+            <div class="music">
+                <h1>Music</h1>
+                <p>Music! I love listening to music, and more importantly, I enjoy discovering new music that suits my personal taste. This section just talks about some of my
+                    favourite albums from some of my favourite artists. Hopefully, you can also listen to some of these albums, and more importantly, find the joy in listening
+                    to music.
+                </p>
+            </div>
+
+            <div class="containerTwo">
+                <div class="col-left">
+                    <h1>Albums</h1>
+
+
+                </div>
+
+                <div class="col-right">
+                    <h1>Why I love it</h1>
+
+                    
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </body>
+
+</html>
