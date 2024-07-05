@@ -17,7 +17,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#music">Music</a></li>
-                <li><a href="#other">Other</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
             </ul>
 
             <ul>
@@ -26,7 +26,7 @@
                 <li class="hideOnMobile"><a href="#about">About Me</a></li>
                 <li class="hideOnMobile"><a href="#projects">Projects</a></li>
                 <li class="hideOnMobile"><a href="#music">Music</a></li>
-                <li class="hideOnMobile"><a href="#other">Other</a></li>
+                <li class="hideOnMobile"><a href="#hobbies">Hobbies</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
             </ul> <!-- last li element has sbg link for menu icon: on click, it should show the list of links using javascript-->
 
@@ -46,13 +46,15 @@
 
         <section id="home">
             <div class="home container">
-                <div class="col-right">
-                    <div class="intro">
-                        <h1>Hi! My name is Aryan Gidwani!<br> Click around the website to learn more about me.</h1>
-                    </div>
-    
+                <div class="columns">
                     <div class="col-left">
                         <img src="img/IMG_9688.jpg" alt="">
+                    </div>
+
+                    <div class="col-right">
+                        <div class="intro">
+                            <h1>Hi! My name is Aryan Gidwani!<br> Click around the website to learn more about me.</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,11 +65,11 @@
             <div class="about">
                 <h1>About Me</h1>
                 <p>Hi! My name is Aryan Gidwani, and I am a second year <b>computer engineering</b> student at the <b>University of Toronto</b>. In my free time, I enjoy
-                playing basketball, playing music, and hanging out with friends:D In addition to just playing basketball, I enjoy watching the sport, as my favourite team 
+                playing basketball, playing music, and hanging out with friends:) In addition to just playing basketball, I enjoy watching the sport, as my favourite team 
                 are the Golden State Warriors. <br> My interest for engineering and programming grew due to my passion for mathematics and learning more about it, as well as
                 a basic introductory online programming course I took in grade 8! Ever since then, I've been passionate about programming, as I have built many projects 
-                that were extremely exciting and rewarding once I figured it out. In fact, this website has been programmed using CSS, Javascript, and HTML! Feel free
-                to contact me at any of my <b>socials</b> listed below.</p>
+                that were extremely exciting and rewarding once I figured it out. In fact, this website has been programmed using CSS, Javascript, and HTML. Feel free
+                to contact me at any of my <b>socials</b> listed below!</p>
             </div>
 
             <div class="contain">
@@ -91,7 +93,7 @@
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
     
-                        <a class="social" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRrnWrcsFCKsxsBFrLXgKJgxWvcLzSBjXrFLHRNjJZtxGSgWZRpjFTMldbRcPPgztzvHQd" target="_blank">
+                        <a class="social" href="mailto:aryangidwani@gmail.com" target="_blank">
                             <ion-icon name="mail-outline"></ion-icon>
                         </a>
                     </div>
@@ -117,79 +119,81 @@
             </div>
 
             <div class="box">
-                <div class="col-left">
-                    <h1>Project Description</h1>
-                    <div class="descriptionOne">
-                        <p><b>Reversi: Apr 2024-Apr 2024</b></p>
-                        <p>Using C, I developed and programmed the popular game of Reversi to be played between the user and the computer. Additionally, I programmed and developed
-                            an algorithm for the CPU that determines the best available move based on the moves made by the user. Validity and availability of user inputted moves
-                            were also taken into account.</p>
 
+                <div class="project">
+                    <div class="col-left">
+                        <h1>Project Description</h1>
+                        <div class="descriptionFive">
+                            <p><b>Well.. this website!: Jun 2024-Jul 2024</b></p>
+                            <p>This website has been coded using HTML, CSS, and a little bit of Javascript. I wanted to talk about myself, the work I've done, and some of the things I've been interested in over the past couple of years. Hence, I thought making a website would be rewarding and also a fun way to express myself. :D</p>
+                        </div>
                     </div>
-
-                    <div class="descriptionTwo">
-                        <p><b>Pacemaker Data Analyzer: Feb 2024-Feb 2024</b></p>
-                        <p>At a hackathon, our team designed an application using Python that would be capable of analyzing data from a pacemaker, which in turn helps detect heart irregularities and
-                            the possibility of low battery levels in the pacemaker. Our team obtained pacemaker data from large datasets in order to analyze trends and get rid of
-                            possible outliers in our program. Additionally, we executed user interface testing to validate the app's usability and functionality of interactive
-                            elements on the application, such as buttons and menus.
-                        </p>
-
+                    <div class="col-right">
+                        <a class="imageFive" href="https://github.com/AryanGidwani/personalwebsite" target="_blank">
+                            <img src="img/Html-tags-icon.png" alt="">
+                        </a>
                     </div>
-
-                    <div class="descriptionThree">
-                        <p><b>Employee Management System: Feb 2023-Jun 2023</b></p>
-                        <p>For my employee management system, I used Java to program back-end and Graphical User Interface for the application. I implemented a functional
-                            stack and queue system, using LIFO and FIFO principles, that was able to store the information of employees in a hash table data structure. System 
-                            capabilities include adding, removing, and modifying employee profiles, as well as specifying employee attributes such as salary and experience.
-                        </p>
-                    </div>
-                    
-                    <div class="descriptionFour">
-                        <p><b>President Card Game: Dec 2021-Jun 2022</b></p>
-                        <p>I coded the popular card game President in Python. I designed and implemented game mechanics, such as shuffling cards, dealing cards, determining
-                            user turn order, and ranking players and cards. Additionally, I determined interactions between the cards placed by the players, and the outcomes
-                            of each card interaction in each scenario.
-                        </p>
-                    </div>
-
-                    <div class="descriptionFive">
-                        <p><b>Well.. this website!: Jun 2024-Jul 2024</b></p>
-                        <p>This website has been coded using HTML, CSS, and a little bit of Javascript. I wanted to talk about myself, the work I've done, and some of the things
-                            I've been interested in over the past couple of years. Hence, I thought making a website would be rewarding and also a fun way to express myself. :D
-                        </p>
-                    </div>
-
-                    
                 </div>
 
-                <div class="col-right">
-                    <h1>Github Repository</h1>
-                    <a class="imageOne" href="https://github.com/AryanGidwani/reversi" target="_blank">
-                        <img src="img/reversi.jpg" alt="">
-                    </a>
-
-                    <a class="imageTwo" href="https://github.com/AryanGidwani/pythonpacemaker" target="_blank">
-                        <img src="img/pacemaker.jpg" alt="">
-                    </a>
-
-                    <a class="imageThree" href="https://github.com/AryanGidwani/emp-system" target="_blank">
-                        <img src="img/ems.png" alt="">
-                    </a>
-
-                    <a class="imageFour" href="https://github.com/AryanGidwani/card-game" target="_blank">
-                        <img src="img/president.jpg" alt="">
-                    </a>
-
-                    <a class="imageFive" href="https://github.com/AryanGidwani/personalwebsite" target="_blank">
-                        <img src="img/Html-tags-icon.png" alt="">
-                    </a>
+                <div class="project">
+                    <div class="col-left">
+                        
+                        <div class="descriptionOne">
+                            <p><b>Reversi: Apr 2024-Apr 2024</b></p>
+                            <p>Using C, I developed and programmed the popular game of Reversi to be played between the user and the computer. Additionally, I programmed and developed an algorithm for the CPU that determines the best available move based on the moves made by the user. Validity and availability of user inputted moves were also taken into account.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageOne" href="https://github.com/AryanGidwani/reversi" target="_blank">
+                            <img src="img/reversi.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
-
-
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionTwo">
+                            <p><b>Pacemaker Data Analyzer: Feb 2024-Feb 2024</b></p>
+                            <p>At a hackathon, our team designed an application using Python that would be capable of analyzing data from a pacemaker, which in turn helps detect heart irregularities and the possibility of low battery levels in the pacemaker. Our team obtained pacemaker data from large datasets in order to analyze trends and get rid of possible outliers in our program. Additionally, we executed user interface testing to validate the app's usability and functionality of interactive elements on the application, such as buttons and menus.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageTwo" href="https://github.com/AryanGidwani/pythonpacemaker" target="_blank">
+                            <img src="img/pacemaker.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionThree">
+                            <p><b>Employee Management System: Feb 2023-Jun 2023</b></p>
+                            <p>For my employee management system, I used Java to program back-end and Graphical User Interface for the application. I implemented a functional stack and queue system, using LIFO and FIFO principles, that was able to store the information of employees in a hash table data structure. System capabilities include adding, removing, and modifying employee profiles, as well as specifying employee attributes such as salary and experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageThree" href="https://github.com/AryanGidwani/emp-system" target="_blank">
+                            <img src="img/ems.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionFour">
+                            <p><b>President Card Game: Dec 2021-Jun 2022</b></p>
+                            <p>I coded the popular card game President in Python. I designed and implemented game mechanics, such as shuffling cards, dealing cards, determining user turn order, and ranking players and cards. Additionally, I determined interactions between the cards placed by the players, and the outcomes of each card interaction in each scenario.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageFour" href="https://github.com/AryanGidwani/card-game" target="_blank">
+                            <img src="img/president.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                
             </div>
-
-
 
         </section>
 
@@ -197,30 +201,106 @@
             <div class="music">
                 <h1>Music</h1>
                 <p>Music! I love listening to music, and more importantly, I enjoy discovering new music that suits my personal taste. This section just talks about some of my
-                    favourite albums from some of my favourite artists. Hopefully, you can also listen to some of these albums, and more importantly, find the joy in listening
-                    to music.
+                    favourite albums from some of my favourite artists. Hopefully, you can also listen to some of these albums, and more importantly, find the joy that music 
+                    can offer to people. This section may change over time as my music taste evolves:)
                 </p>
             </div>
 
             <div class="containerTwo">
-                <div class="col-left">
-                    <h1>Albums</h1>
+                <div class="album">
+                    <div class="col-left">
+                        <div class="coverOne">
+                            <img src="img/coverOne.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <div class="albumOne">
+                            <p style="color: skyblue"><b>good kid, m.A.A.d city</b></p>
+                            <p>Arguably my favourite hip hop album of all time. The sounds, the production, the rapping, and the storytelling all come together to make
+                                one awesome album. Additionally, its so unique how the artist is able to tell a story from the first track to the last track that delivers
+                                a powerful and meaningful message about finding yourself, throughout the music. I suggest this to anyone who wishes to get more into hip hop music! 
+                            </p>
+                        </div>
 
 
+                    </div>
                 </div>
 
-                <div class="col-right">
-                    <h1>Why I love it</h1>
+                <div class="album"> 
+                    <div class="col-left">
+                        <div class="coverTwo">
+                            <img src="img/house.png" alt="">
+                        </div>
+                    </div>
 
-                    
-
+                    <div class="col-right">
+                        <p style="color: skyblue"><b>The House Is Burning</b></p>
+                        <p>In my opinion, this album is such a good listen from top to bottom. The album has all types of tracks with different moods and vibes, such
+                            as chill, moody, and even upbeat, hype vibes. Great album to listen to, and I personally like the creative cover art.:)
+                        </p>
+                    </div>
                 </div>
+
+                <div class="album">
+                    <div class="col-left">
+                        <div class="coverThree">
+                            <img src="img/cug.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <p style="color: skyblue"><b>C U Girl</b></p>
+                        <p>This one isn't an album, but it's one of of my favourite songs ever. It's only around 2 minutes in length, but the production of this song
+                            creates a feel good vibe. It gives off a warm vibe that makes it listenable and enjoyable.
+                        </p>
+                    </div>
+                </div>
+
             </div>
-
-
-
         </section>
 
+        <section id="hobbies">
+            <div class="other">
+                <h1>Hobbies</h1>
+                <p>Finally, this section will outline a little bit more about me! Outside of programming and doing engineering <b>stuff</b>, I love hiking and playing
+                    basketball. Feel free to look at the pictures from the best hike I've ever done, which was 26km in total length, and the one basketball
+                    game I attended, where I was able to watch my favourite team:). The first set of pictures show some of the pictures from my hike in Lake Louise, Alberta. </p>
+
+            </div>
+
+            <div class="containerThree">
+                <div class="photo">
+                    <div class="col-left">
+                        <div class="picOne">
+                            <img src="img/IMG_9683.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="col-right">
+                        <div class="picTwo">
+                            <img src="img/IMG_9697.jpg">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="photo">
+                    <div class="col-left">
+                        <div class="picThree">
+                            <img src="img/IMG_9708.jpg">
+                        </div>
+                    </div>
+                
+                    <div class="col-right">
+                        <div class="picFour">
+                            <img src="img/IMG_9749.jpg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
     </body>
 
