@@ -12,9 +12,8 @@ html {
     box-sizing: border-box;
 }
 
-
 nav {
-    background-color: #292b2f; /* navigation bar is grey */
+    background-color: black; /* navigation bar is grey */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -169,7 +168,6 @@ img {
     background-color: #292b2f; /* consistent background colour */
 }
 
-
 #about .about { /* for about me text, uses a flex column to organize the text for responsive web design */
     flex-direction: column;
     text-align: center;
@@ -255,7 +253,6 @@ img {
 
 #about .col-right .animation {
     margin-top: 180px;
-
 }
 
 /* animation code */
@@ -479,12 +476,35 @@ img {
 
 #hobbies .col-right {
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
 
-#hobbies .photo .picThree, #hobbies .photo .picFour {
+#hobbies .photo .picThree, #hobbies .photo .picFour, #hobbies .photo .picFive, #hobbies .photo .picSix {
     width: 100%;
     height: auto;
+}
+
+#remarks {
+    background-color: #292b2f;
+
+}
+
+#remarks .remarks {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#remarks .remarks p {
+    color: white;
+    font-size: 30px;
+}
+
+#remarks .remarks h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 60px;
 }
