@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aryan Gidwani</title>
+    </head>
+    <link href='./style.css' rel='stylesheet'>
+    <body>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <nav>     
+            <ul class="sidebar">    <!-- Displays sidebar vertically -->                 
+                <li onclick=hideSidebar()><a class='name' href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">Aryan Gidwani</a></li>     <!-- Displays it in the normal, horizontal way -->
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About Me</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#music">Music</a></li>
+                <li class="hideOnMobile"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </ul> <!-- last li element has sbg link for menu icon: on click, it should show the list of links using javascript-->
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex'; // currently display = none in the css code; when it's clicked we want the vertical sidebar to appear, so we need to switch it to flex
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none'; // similar idea: when clicking on the x icon, the vertical sidebar will disappear
+            }
+        </script>
+
+        <section id="home">
+            <div class="home container">
+                <div class="columns">
+                    <div class="col-left">
+                        <img src="img/20240611_153006.jpg" alt="">
+                    </div>
+
+                    <div class="col-right">
+                        <div class="intro">
+                            <h1>Hi! My name is Aryan Gidwani!<br> Feel free to navigate the website to learn more about me.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about">
+                <h1>About Me</h1>
+                <p>Hi! My name is Aryan and I am an incoming second year <b>computer engineering</b> student at the <b>University of Toronto</b>. In my free time, I enjoy
+                playing and watching basketball, listening to music, and hanging out with friends:) My favourite NBA team 
+                is the Golden State Warriors. <br> I have loved mathematics from an early age and my interest in engineering and programming developed in high school when I took computer science courses and was fascinated with the endless possibilities technology offers. I enjoy coding and problem solving to bring innovative ideas to life.         
+                I have developed this website from scratch using HTML, CSS, and Javascript. Feel free
+                to contact me at any of my <b>socials</b> listed below!</p>
+            </div>
+
+            <div class="contain">
+                <div class="col-left">
+                    <img src="img/IMG_1952.jpg" alt="">
+    
+                </div>
+                <div class="col-right">
+                    <h1>Contact Information</h1>
+                    <div class="social-icons">
+                        <a class="social" href="https://www.instagram.com/aryan_gidwani/" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+    
+                        <a class="social" href="https://github.com/AryanGidwani" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        
+                        <a class="social" href="https://www.linkedin.com/in/aryan-gidwani/" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+    
+                        <a class="social" href="mailto:aryangidwani@gmail.com" target="_blank">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="animation">
+                        <h1 class="text-one">Download <span></span></h1>
+                        <h1 class="text-two">my resume by<span></span></h1>
+                        <h1 class="text-three">clicking on the button!<span></span></h1>
+                    </div>
+                </div>
+
+                <div class="col-right-right">
+                    <h1>Resume</h1>
+                    <a href="img/Aryan_Gidwani_Resume.pdf" download="My_Resume.pdf" class="button" target="_blank"><b>Download</b></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="projects">
+                <h1>Projects</h1>
+                <p>This section will outline some of the programming projects I've done over the past couple of years. I have used Javscript, HTML, CSS, Python, C, and Java for these projects! Click on the images
+                if you want to see the Github repository with the code.</p>
+            </div>
+
+            <div class="box">
+                <div class="project">
+                    <div class="col-left">
+                        <h1>Project Description</h1>
+                        <div class="descriptionFive">
+                            <p><b>Well.. this website!: Jun 2024-Jul 2024</b></p>
+                            <p>This website has been coded from scratch using HTML, CSS, and Javascript. Building this website was a fun way to develop my coding skills and creativity and share more about myself. 
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageFive" href="https://github.com/AryanGidwani/personalwebsite" target="_blank">
+                            <img src="img/Html-tags-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="col-left">    
+                        <div class="descriptionOne">
+                            <p><b>Reversi: Apr 2024-Apr 2024</b></p>
+                            <p>Using C, I developed and programmed the popular game of Reversi to be played between the user and the computer. I programmed and developed an algorithm that determines the best available move for the computer based on the moves made by the user. Validity and availability of user inputted moves were also taken into account.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageOne" href="https://github.com/AryanGidwani/reversi" target="_blank">
+                            <img src="img/reversi.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionTwo">
+                            <p><b>Pacemaker Data Analyzer: Feb 2024-Feb 2024</b></p>
+                            <p>At a hackathon, our team designed an application using Python that would be capable of analyzing data from a pacemaker, which in turn helps detect heart irregularities and the possibility of low battery levels in the pacemaker. Our team obtained pacemaker data from large datasets in order to analyze trends and get rid of possible outliers in our program. Additionally, we executed user interface testing to validate the app's usability and functionality of interactive elements on the application, such as buttons and menus.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageTwo" href="https://github.com/AryanGidwani/pythonpacemaker" target="_blank">
+                            <img src="img/pacemaker.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionThree">
+                            <p><b>Employee Management System: Feb 2023-Jun 2023</b></p>
+                            <p>For my employee management system, I used Java to program back-end and Graphical User Interface for the application. I implemented a functional stack and queue system, using LIFO and FIFO principles, that was able to store the information of employees in a hash table data structure. System capabilities include adding, removing, and modifying employee profiles, as well as specifying employee attributes such as salary and experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageThree" href="https://github.com/AryanGidwani/emp-system" target="_blank">
+                            <img src="img/ems.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="col-left">
+                        <div class="descriptionFour">
+                            <p><b>President Card Game: Dec 2021-Jun 2022</b></p>
+                            <p>I coded the popular card game President in Python. I designed and implemented game mechanics, such as shuffling cards, dealing cards, determining user turn order, and ranking players and cards. Additionally, I determined interactions between the cards placed by the players, and the outcomes of each card interaction in each scenario.</p>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a class="imageFour" href="https://github.com/AryanGidwani/card-game" target="_blank">
+                            <img src="img/president.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="music">
+            <div class="music">
+                <h1>Music</h1>
+                <p>Music! I love listening to music and enjoy discovering new music and artists to add to my favourites list. This section just talks about some of my
+                    favourite albums from some of my favourite artists. If you have not already listened to these albums, please give a listen, hopefully you will also enjoy them as much as I do! This section may change over time as my music taste evolves:)
+                </p>
+            </div>
+
+            <div class="containerTwo">
+                <div class="album">
+                    <div class="col-left">
+                        <div class="coverOne">
+                            <img src="img/coverOne.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <div class="albumOne">
+                            <p style="color: skyblue"><b>good kid, m.A.A.d city</b></p>
+                            <p>Arguably my favourite hip hop album of all time. The sounds, the production, the rapping, and the storytelling all come together to make
+                                one awesome album. I find it incredibly unique as to how the artist is able to tell a story throughout the album that delivers
+                                a powerful and meaningful message about finding yourself. I suggest this to anyone who wishes to get more into hip hop music! 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="album"> 
+                    <div class="col-left">
+                        <div class="coverTwo">
+                            <img src="img/house.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <p style="color: skyblue"><b>The House Is Burning</b></p>
+                        <p>This album is such a good listen from top to bottom. It has all types of tracks with different moods and vibes, such
+                            as chill, moody, and even upbeat, hype vibes. Great album to listen to, and I really like the creative cover art.:)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <div class="col-left">
+                        <div class="coverThree">
+                            <img src="img/cug.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <p style="color: skyblue"><b>C U Girl</b></p>
+                        <p>This one isn't an album, but it's one of of my favourite songs ever. It's only around 2 minutes long, but the production of this song
+                            gives a feel good and a warm vibe that makes it enjoyable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <div class="other">
+                <h1>Hobbies</h1>
+                <p>Finally, this section will give a sneak peak into my hobbies. 
+                    
+                    In my free time,I love biking, working out, playing video games, basketball and chess. 
+                    
+                    The first set of photos show some pictures from the best hike I've ever done, in Lake Louise, Banff National Park, Alberta. This hike was a total of 26 kms and took approximately 8 hours. It started from Lake Louise and I hiked to Agnes Tea House, the beehive and the plain of six glaciers tea house. If you ever visit and are also into hiking, I recommend doing it!.
+                </p>
+            </div>
+
+            <div class="containerThree">
+                <div class="photo">
+                    <div class="col-left">
+                        <div class="picOne">
+                            <img src="img/IMG_9683.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="col-right">
+                        <div class="picTwo">
+                            <img src="img/IMG_9697.jpg">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="photo">
+                    <div class="col-left">
+                        <div class="picThree">
+                            <img src="img/IMG_9708.jpg">
+                        </div>
+                    </div>
+                
+                    <div class="col-right">
+                        <div class="picFour">
+                            <img src="img/IMG_9749.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other">
+                <p>The pictures below are from the first ever basketball game I attended at Scotia Bank Arena in Toronto. As a Golden State Warriors fan, it was an awesome experience to watch a game between the Warriors and the Raptors. Luckily for me, the Warriors won the game as well! </p>
+            </div>
+
+            <div class="containerThree">
+                <div class="photo">
+                    <div class="col-left">
+                        <div class="picFive">
+                            <img src="img/IMG_1388.jpg">
+                        </div>
+                    </div>
+
+                    <div class="col-right">
+                        <div class="picSix">
+                            <img src="img/IMG_7798.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="remarks">
+            <div class="remarks">
+                <p><b>Thank you for visiting my website! </b> </p>
+                <h3><b>Made by Aryan Gidwani</b></h3>
+            </div>
+       </section>
+    </body>
+</html>
