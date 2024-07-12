@@ -13,11 +13,11 @@
         <nav>     
             <ul class="sidebar">    <!-- Displays sidebar vertically -->                 
                 <li onclick=hideSidebar()><a class='name' href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#home" onclick="navigate(event)">Home</a></li>
+                <li><a href="#about" onclick="navigate(event)">About Me</a></li>
+                <li><a href="#projects" onclick="navigate(event)">Projects</a></li>
+                <li><a href="#music" onclick="navigate(event)">Music</a></li>
+                <li><a href="#hobbies" onclick="navigate(event)">Hobbies</a></li>
             </ul>
 
             <ul>
@@ -41,6 +41,15 @@
                 const sidebar = document.querySelector('.sidebar');
                 sidebar.style.display = 'none'; // similar idea: when clicking on the x icon, the vertical sidebar will disappear
             }
+
+            function navigate(event) {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+
+            document.querySelectorAll('.sidebar li a').forEach(link => {
+                link.addEventListener('click', navigate);
+        });
         </script>
 
         <section id="home">
