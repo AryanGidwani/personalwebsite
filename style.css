@@ -187,7 +187,6 @@ img {
     font-size: 1.2em;
 }
 
-
 #about .contain { /* creates container so that information can be placed side by side */
     display: flex;
 }
@@ -323,7 +322,7 @@ img {
 #projects .col-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* aligns along the horizontal axis */
     color: skyblue;
     margin-left: 10%;
 }
@@ -343,7 +342,8 @@ img {
 #projects .col-left .descriptionTwo, 
 #projects .col-left .descriptionThree, 
 #projects .col-left .descriptionFour, 
-#projects .col-left .descriptionFive {
+#projects .col-left .descriptionFive,
+#projects .col-left .descriptionSix {
     color: white;
     font-size: 1.2em;
     margin-top: 20px;
@@ -353,7 +353,8 @@ img {
 #projects .col-right .imageTwo, 
 #projects .col-right .imageThree, 
 #projects .col-right .imageFour, 
-#projects .col-right .imageFive {
+#projects .col-right .imageFive,
+#projects .col-right .imageSix {
     width: 150px;
     height: auto;
 }
